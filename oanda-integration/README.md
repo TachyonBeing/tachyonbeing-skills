@@ -1,32 +1,27 @@
 # OANDA Integration Framework for TachyonBeing
+# Status: PENDING - API key verification needed
 
-## Account Setup
-- Live OANDA account created
-- Email: tachyonbeing@protonmail.com
-- Status: Ready for integration
+## CREDENTIALS
+# API Key: 730ab777f39643eab6637e7eae606c7e-b5b5e040f84f042bd28223531b7308dd
+# Account ID: 21553572001
+# Environment: Live (api-fxtrade.oanda.com)
 
-## API Configuration
-- Base URL: https://api-fxtrade.oanda.com/v3
-- API Key: Stored in .env
-- Python SDK: oanda-v20
+## STATUS
+- Account: ACTIVATED (confirmed via email)
+- API Key: REJECTED (Cloudflare blocking or wrong format)
+- Next Step: Verify API key works in OANDA web interface
 
-## Integration Steps
-1. Install oanda-v20 SDK
-2. Configure API credentials
-3. Test account connection
-4. Set up paper trading
-5. Run backtests
-6. Deploy live trading
+## INTEGRATION PLAN
+1. Verify API key format with OANDA support
+2. Test with practice account first
+3. Build paper trading framework
+4. Deploy to live account
 
-## Risk Parameters
-- Max position size: 1% of account
-- Daily loss limit: 2%
-- Max drawdown: 5%
-- Stop loss: Mandatory on all positions
+## API ENDPOINTS
+- Live: https://api-fxtrade.oanda.com/v3/
+- Practice: https://api-fxpractice.oanda.com/v3/
 
-## Trading Pairs
-- EUR/USD (primary)
-- GBP/USD
-- USD/JPY
-- AUD/USD
-- USD/CAD
+## SECURITY
+- Store API key in macOS Keychain
+- Use .env file for local development
+- Never commit credentials to GitHub
